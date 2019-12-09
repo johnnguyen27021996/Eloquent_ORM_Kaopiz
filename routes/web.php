@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,6 +12,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('bt1', 'BT1Controller@index')->name('bt1.show');
+Route::post('bt1', 'BT1Controller@search')->name('bt1.search');
